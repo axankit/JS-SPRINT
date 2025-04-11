@@ -40,7 +40,7 @@ console.log(teaTypes)
 4. Declare an array named `citiesVisited` containing `"Mumbai"` and `"Sydney"`. 
    Add `"Berlin"` to the array using the `push` method.
 */
-
+ 
 
 const citiesVisited =["Mumbai", "Sydney"]
 
@@ -65,27 +65,46 @@ console.log(lastOrder)
    Create a soft copy of this array named `softCopyTeas`.
 */
 
+const popularTeas=["green tea", "oolong tea","chai"]
+
+const softCopyTeas=[...popularTeas]
+
+console.log(softCopyTeas)
 
 /* 
 7. You have an array named `topCities` containing `"Berlin"`, `"Singapore"`, and `"New York"`. 
    Create a hard copy of this array named `hardCopyCities`.
 */
 
+const topCities=["Berlin","Singapore","New York"]
 
+const hardCopyCities=topCities
+
+console.log(hardCopyCities)
 
 /* 
 8. You have two arrays: `europeanCities` containing `"Paris"` and `"Rome"`, and `asianCities` containing `"Tokyo"` and `"Bangkok"`. 
    Merge these two arrays into a new array named `worldCities`.
 */
 
+const europeanCities=["Paris","Rome"]
 
+const asianCities=["Tokyo", "Bangkok"]
+
+const worldCities= europeanCities.concat(asianCities)
+
+console.log(worldCities)
 
 /* 
 9. You have an array named `teaMenu` containing `"masala chai"`, `"oolong tea"`, `"green tea"`, and `"earl grey"`. 
    Find the length of the array and store it in a variable named `menuLength`.
 */
 
+const teaMenu=["masala chai","oolong tea","green tea","earl grey"]
 
+const menuLength=teaMenu.length
+
+console.log(menuLength)
 
 /* 
 10. You have an array named `cityBucketList` containing `"Kyoto"`, `"London"`, `"Cape Town"`, and `"Vancouver"`. 
@@ -93,3 +112,8 @@ console.log(lastOrder)
 */
 
 
+const cityBucketList=["Kyoto","London", "Cape Town" ,"Vancouver"]
+
+const isLondonInList=cityBucketList.includes("London")
+
+console.log(isLondonInList)
